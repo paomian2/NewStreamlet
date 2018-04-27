@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.linxz.users">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="debug.UsersLauncherActivity"/>
+        <activity android:name=".mvp.appui.UserHomeActivity"/>
+        <activity android:name=".mvp.appui.UserHomeActivity2"/>
+        <activity android:name=".mvp.appui.SignInActivity"/>
+        <activity android:name=".mvp.appui.SignUpActivity"/>
+        <activity android:name=".mvp.appui.im.IMTestActivity"/>
+        <activity android:name=".mvp.appui.UserInfoActivity"/>
+        <activity android:name=".mvp.UserInfoUpdateActivity"/>
+
+        <!--发布消息-->
+        <activity android:name=".mvp.appui.push.MyPushListActivity"/>
+        <activity android:name=".mvp.appui.push.PushActivity"/>
+    </application>
+
+
+</manifest>

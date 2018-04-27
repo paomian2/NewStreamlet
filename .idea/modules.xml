@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/NewStreamlet.iml" filepath="$PROJECT_DIR$/NewStreamlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamlet-androdstudy/streamlet-androdstudy.iml" filepath="$PROJECT_DIR$/streamlet-androdstudy/streamlet-androdstudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamlet-annotation/streamlet-annotation.iml" filepath="$PROJECT_DIR$/streamlet-annotation/streamlet-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamlet-compiler/streamlet-compiler.iml" filepath="$PROJECT_DIR$/streamlet-compiler/streamlet-compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamlet-core/streamlet-core.iml" filepath="$PROJECT_DIR$/streamlet-core/streamlet-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamlet-interviews/streamlet-interviews.iml" filepath="$PROJECT_DIR$/streamlet-interviews/streamlet-interviews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamlet-main/streamlet-main.iml" filepath="$PROJECT_DIR$/streamlet-main/streamlet-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamlet-manager/streamlet-manager.iml" filepath="$PROJECT_DIR$/streamlet-manager/streamlet-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/streamlet-users/streamlet-users.iml" filepath="$PROJECT_DIR$/streamlet-users/streamlet-users.iml" />
+    </modules>
+  </component>
+</project>

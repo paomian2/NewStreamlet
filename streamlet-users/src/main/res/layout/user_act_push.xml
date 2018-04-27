@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:ignore="HardcodedText"
+    android:orientation="vertical">
+
+    <include layout="@layout/user_base_actionbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="24dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_cate"
+                    android:textSize="14sp"
+                    android:text="选择分类"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RtlHardcoded" />
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/spinner_cate"
+                    android:layout_toRightOf="@+id/tv_cate"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    tools:ignore="RtlHardcoded" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_marginTop="24dp"
+                android:background="@color/white"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_marginLeft="16dp"
+                    android:textSize="14sp"
+                    android:text="标题"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RtlHardcoded" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_title"
+                    android:textSize="14sp"
+                    android:hint="Android最新技术探讨"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="14sp"
+                    android:text="内容"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RtlHardcoded" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    android:minLines="7"
+                    android:gravity="top"
+                    android:background="@drawable/card__bg"
+                    android:hint="Android最新技术探讨"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/edt_link_url"
+                    android:minLines="1"
+                    android:layout_marginTop="16dp"
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    android:gravity="top"
+                    android:hint="相关链接"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/card__bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:descendantFocusability="blocksDescendants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_imgs"
+                    android:layout_marginTop="16dp"
+                    android:padding="16dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

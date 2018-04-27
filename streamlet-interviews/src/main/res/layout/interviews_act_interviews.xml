@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,RtlHardcoded">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/tv_reback"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="{fa-angle-left}"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="面试题"
+                android:maxLength="16"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/layoutScrollView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--简答题-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/layoutShortAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_article_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Java单利模式"
+                    android:textSize="16sp" />
+
+                <com.linxz.core.widget.AlignTextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Activity是Android的四大组件之一。是用户操作的可视化界面；它为用户提供了一个完成操作指令的窗口。当我们创建完毕Activity之后，需要调用setContentView()方法来完成界面的显示；以此来为用户提供交互的入口。在Android App 中只要能看见的几乎都要依托于Activity，所以Activity是在开发中使用最频繁的一种组件。"
+                    android:textSize="14sp" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <!--选择题-->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/layoutChooseAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="选择题目"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_questionA"
+                    style="@style/style_shoose"
+                    android:text="A.选项" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_questionB"
+                    style="@style/style_shoose"
+                    android:text="B.选项" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_questionC"
+                    style="@style/style_shoose"
+                    android:text="C.选项" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_questionD"
+                    style="@style/style_shoose"
+                    android:text="D.选项" />
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <!--题目链接-->
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.v7.widget.LinearLayoutCompat>

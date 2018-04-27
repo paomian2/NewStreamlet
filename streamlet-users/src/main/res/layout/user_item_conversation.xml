@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:ignore="RtlHardcoded,HardcodedText"
+    android:background="@color/white">
+
+    <com.linxz.core.widget.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_centerVertical="true"
+        android:src="@color/page_bg"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_user_name"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/img_user"
+        android:layout_marginLeft="16dp"
+        android:text="用户名"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_last_msg"
+        android:layout_below="@+id/tv_user_name"
+        android:text="最近消息"
+        android:layout_toRightOf="@+id/img_user"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="8dp"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_time"
+        android:layout_marginTop="8dp"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:text="下午11:09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="SmallSp" />
+
+   <android.support.v7.widget.AppCompatTextView
+       android:id="@+id/tv_unread"
+       android:layout_below="@+id/tv_time"
+       android:text="100"
+       android:gravity="center"
+       android:layout_marginTop="8dp"
+       android:layout_marginRight="8dp"
+      android:layout_alignParentRight="true"
+       android:textColor="@color/white"
+       android:textSize="8sp"
+       android:background="@drawable/bg_unread"
+       android:layout_width="16dp"
+       android:layout_height="16dp"
+       tools:ignore="SmallSp" />
+
+</RelativeLayout>

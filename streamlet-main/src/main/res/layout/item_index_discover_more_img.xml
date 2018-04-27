@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.ContentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,RtlHardcoded">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_discover_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发表的标题..."
+            android:textSize="12sp"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="1小时前"
+            android:textSize="12sp"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvlable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@+id/tv_time"
+            android:text="来围观"
+            android:textSize="12sp"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_discover_title"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@+id/img_desc1"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="文章的内容，PHP是天底下最好的开发语言，不服来辩，什么JAVA，,NET,Android,C，JS都是不是对手..."
+            android:textSize="12sp"
+            tools:ignore="UnknownIdInLayout" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_imgs"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/tv_desc"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_below="@+id/rv_imgs"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="刘亦菲"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_look"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_below="@+id/rv_imgs"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/tv_up"
+            android:gravity="center_vertical"
+            android:text="19浏览"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_up"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rv_imgs"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="20赞"
+            android:textSize="12sp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        tools:ignore="RtlHardcoded">
+
+        <com.linxz.core.widget.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/mysef_head_white_border" />
+
+        <com.linxz.core.widget.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@color/colorPrimary" />
+    </RelativeLayout>
+
+</android.support.v7.widget.ContentFrameLayout>

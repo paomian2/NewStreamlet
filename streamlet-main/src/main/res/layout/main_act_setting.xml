@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:ignore="HardcodedText,RtlSymmetry,RtlHardcoded"
+    android:orientation="vertical">
+    <include layout="@layout/base_actionbar"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_up"
+        android:paddingLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="12sp"
+            android:text="赞一赞"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="{fa_align_right}"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_faceback"
+        android:layout_marginTop="1px"
+        android:paddingLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="12sp"
+            android:text="意见反馈"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="{fa_align_right}"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_scroll"
+        android:layout_marginTop="1px"
+        android:paddingLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="12sp"
+            android:text="引导页"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="{fa_align_right}"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_clear"
+        android:layout_marginTop="1px"
+        android:paddingLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="12sp"
+            android:text="清除缓存"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="{fa_align_right}"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_about_us"
+        android:layout_marginTop="1px"
+        android:paddingLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="12sp"
+            android:text="关于我们"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="{fa_align_right}"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_exist"
+        android:layout_marginTop="1px"
+        android:paddingLeft="20dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="12sp"
+            android:text="推出当前账号"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="{fa_align_right}"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

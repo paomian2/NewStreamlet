@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,RtlHardcoded">
+
+    <!--点赞列表-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="点赞评论"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <!--操作图标-->
+    <GridView
+        android:id="@+id/gv_icon"
+        android:scrollbars="none"
+        android:numColumns="3"
+        android:horizontalSpacing="18dp"
+        android:verticalSpacing="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

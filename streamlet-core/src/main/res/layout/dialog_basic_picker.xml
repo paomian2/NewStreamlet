@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_left"
+            android:text="取消"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="40dp"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_right"
+            android:text="确定"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+    <com.contrarywind.view.WheelView
+        android:id="@+id/wheelview"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

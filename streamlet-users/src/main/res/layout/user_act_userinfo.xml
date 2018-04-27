@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,RtlHardcoded">
+
+    <include layout="@layout/user_base_actionbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="头像"
+            android:textSize="14sp" />
+
+        <com.linxz.core.widget.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:src="@color/page_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/user_user_info_layout"
+        android:layout_marginTop="24dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/user_user_info_tv_left"
+            android:text="昵称" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_nick_name"
+            style="@style/user_user_info_tv_right"
+            android:text="风满楼" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/user_user_info_layout">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/user_user_info_tv_left"
+            android:text="简介" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_desc"
+            style="@style/user_user_info_tv_right"
+            android:text="小楼又春风" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/user_user_info_layout">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/user_user_info_tv_left"
+            android:text="性别" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_sex"
+            style="@style/user_user_info_tv_right"
+            android:text="男" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/user_user_info_layout">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/user_user_info_tv_left"
+            android:text="电话" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_phone"
+            style="@style/user_user_info_tv_right"
+            android:text="未绑定" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/user_user_info_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/user_user_info_tv_left"
+            android:text="Email" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_eamil"
+            style="@style/user_user_info_tv_right"
+            android:text="未绑定" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/user_user_info_layout">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/user_user_info_tv_left"
+            android:text="地址" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_adress"
+            style="@style/user_user_info_tv_right"
+            android:text="未绑定" />
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>

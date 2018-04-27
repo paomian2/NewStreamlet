@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="me.yokeyword:fragmentation-swipeback-1.2.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fragmentation-swipeback-1.2.5.aar/dbbc145ff6f435da6a8d4eb00b64bfbc/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/fragmentation-swipeback-1.2.5.aar/dbbc145ff6f435da6a8d4eb00b64bfbc/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.yokeyword/fragmentation-swipeback/1.2.5/300b7af36eabaf0cab85e326ded6a1b6d3813fbd/fragmentation-swipeback-1.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

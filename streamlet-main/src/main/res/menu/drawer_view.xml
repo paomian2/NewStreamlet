@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <group
+        android:id="@+id/planet_group_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/arrow"
+            android:title="我的收藏" />
+    </group>
+
+    <group
+        android:id="@+id/planet_group_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/arrow"
+            android:title="发布信息" />
+    </group>
+
+    <group
+        android:id="@+id/planet_group_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:icon="@drawable/arrow"
+            android:title="资源商城" />
+    </group>
+
+    <group
+        android:id="@+id/planet_group_4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fourth_fragment"
+            android:icon="@drawable/main_icon_settings"
+            android:title="系统设置" />
+    </group>
+
+    <group
+        android:id="@+id/planet_group_5"
+        android:checkableBehavior="single">
+    </group>
+
+
+</menu>

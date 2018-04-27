@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+   android:padding="8dp"
+    tools:ignore="RelativeOverlap,RtlHardcoded"
+    android:layout_height="wrap_content">
+
+    <com.linxz.core.widget.CircleImageView
+        android:id="@+id/img_users"
+        android:src="@color/pink"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_user_name_discuss"
+        android:layout_toRightOf="@+id/img_users"
+        android:textSize="12sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="刘亦菲回复我：装得一手好逼~~~"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="NestedWeights,HardcodedText"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+        <com.linxz.core.widget.CircleImageView
+            android:id="@+id/img_manager"
+            android:src="@color/yellow"
+            android:layout_centerVertical="true"
+            android:layout_width="120px"
+            android:layout_height="120px"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="9"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_users"
+                android:text="用戶信息"
+               style="@style/manager_tv_style_index"
+                android:layout_marginTop="0px"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_study"
+                android:text="基礎"
+                style="@style/manager_tv_style_index" />
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_interview"
+                android:text="面試"
+                style="@style/manager_tv_style_index" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <com.linxz.core.widget.NoScrollViewPager
+            android:id="@+id/viewPager"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

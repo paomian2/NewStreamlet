@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:ignore="DisableBaselineAlignment,PxUsage,HardcodedText">
+
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+
+    <ScrollView
+        android:background="@color/page_bg"
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_categoryId"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                tools:ignore="PxUsage"/>
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_question"
+                android:hint="请输入题目"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                tools:ignore="HardcodedText,PxUsage" />
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_answerA"
+                android:hint="选项A"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                tools:ignore="PxUsage" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_answerB"
+                android:hint="选项B"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                tools:ignore="PxUsage" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_answerC"
+                android:hint="选项C"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                tools:ignore="PxUsage" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_answerD"
+                android:hint="选项D"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                tools:ignore="PxUsage" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_answer"
+                android:hint="选项D"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                tools:ignore="PxUsage" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_linkIds"
+                android:hint="相关ID"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                tools:ignore="PxUsage" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_url"
+                android:hint="相关链接"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                tools:ignore="PxUsage" />
+
+
+            <RadioGroup
+                android:id="@+id/rg_questionType"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="100px"
+                tools:ignore="PxUsage">
+                <RadioButton
+                    android:id="@+id/rb_select"
+                    android:text="选择题"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText" />
+                <RadioButton
+                    android:id="@+id/rb_answer"
+                    android:layout_marginLeft="20dp"
+                    android:text="简答题"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:background="@color/yellow"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="提交"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="50px"
+                tools:ignore="HardcodedText,PxUsage" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

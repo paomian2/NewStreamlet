@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img_news"
+        android:src="@drawable/img_def"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_news_desc"
+        android:text="新闻内容"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="12sp"
+        android:layout_height="48dp"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+</android.support.v7.widget.LinearLayoutCompat>

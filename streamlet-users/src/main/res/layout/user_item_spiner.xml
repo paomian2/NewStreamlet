@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tv_cate"
+    android:textSize="14sp"
+    android:typeface="serif"
+    android:gravity="center"
+    android:background="@color/white"/>
+
