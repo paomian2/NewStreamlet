@@ -31,6 +31,7 @@ public class AppApplication extends BaseApplication {
             //一定要在ARouter.init之前调用openDebug
             ARouter.openDebug();
             ARouter.openLog();
+            //分支
         }
 
         ARouter.init(this);
